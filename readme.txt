@@ -2,7 +2,8 @@
 Contributors: dartiss
 Tags: embed, markdown, parser, plugin, readme, view
 Requires at least: 4.6
-Tested up to: 4.8
+Tested up to: 4.9
+Requires PHP: 5.3
 Stable tag: 1.3.7
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -37,7 +38,7 @@ Technical specification...
 * XHTML compliant output
 * Fully internationalized, ready for translations. **If you would like to add a translation to this plugin then please head to our [Translating WordPress](https://translate.wordpress.org/projects/wp-plugins/wp-readme-parser "Translating WordPress") page**
 
-For the latest known issue and planned enhancements, please see [my Bug Tracker site](https://artiss.uk/bugtracker/index.php?project=15 "Bug Tracker") site.
+Please visit the [Github page](https://github.com/dartiss/plugin-readme-parser "Github") for the latest code development, planned enhancements and known issues.
 
 == Getting Started ==
 
