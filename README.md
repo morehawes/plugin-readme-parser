@@ -18,3 +18,7 @@ Features include...
 * Google Translation suppressed on code output
 
 Plugin README Parser uses [PHP Markdown Extra](http://michelf.com/projects/php-markdown/extra/ "PHP Markdown Extra") by Michel Fortin.
+
+### Reviews & Mentions
+
+[WPCandy](http://wpcandy.com/reports/wp-readme-parser-plugin-converts-plugins-readme-into-blog-ready-xhtml?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+wpcandy+%28WPCandy+-+The+Best+of+WordPress%29 "WPCandy") - WP README Parser Plugin converts Plugin's readme into blog-ready XHTML
