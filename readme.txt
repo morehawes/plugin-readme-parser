@@ -40,8 +40,6 @@ Technical specification...
 
 Please visit the [Github page](https://github.com/dartiss/plugin-readme-parser "Github") for the latest code development, planned enhancements and known issues.
 
-Icons made by [Freepik](https://www.flaticon.com/authors/freepik "Freepik") from [www.flaticon.co](https://www.flaticon.com/ "Flaticon") is licensed by [CC 3.0 BY](http://creativecommons.org/licenses/by/3.0 "Creative Commons BY 3.0").
-
 == Getting Started ==
 
 To use, simply add the `[readme]` shortcode to any post or page. An example of use would be...
