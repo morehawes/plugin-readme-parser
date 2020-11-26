@@ -1,14 +1,14 @@
 === Plugin README Parser ===
 Contributors: dartiss
-Tags: embed, markdown, parser, plugin, readme, view
+Tags: embed, markdown, parser, plugin, readme
 Requires at least: 4.6
-Tested up to: 5.3
+Tested up to: 5.6
 Requires PHP: 5.3
 Stable tag: 1.3.7
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Plugin README Parser will display a WordPress plugin's README file in XHTML format, for embedding on a post or page.
+📑 Embed README content into posts
 
 == Description ==
 
@@ -30,15 +30,9 @@ Key features include...
 * Google Translation suppressed on code output
 * And much, much more!
 
-Technical specification...
+Iconography is courtesy of the very talented [Janki Rathod](https://www.fiverr.com/jankirathore) ♥️
 
-* Licensed under [GPLv2 (or later)](http://wordpress.org/about/gpl/ "GNU General Public License")
-* Designed for both single and multi-site installations
-* PHP7 compatible
-* XHTML compliant output
-* Fully internationalized, ready for translations. **If you would like to add a translation to this plugin then please head to our [Translating WordPress](https://translate.wordpress.org/projects/wp-plugins/wp-readme-parser "Translating WordPress") page**
-
-Please visit the [Github page](https://github.com/dartiss/plugin-readme-parser "Github") for the latest code development, planned enhancements and known issues.
+👉 Please visit the [Github page](https://github.com/dartiss/plugin-readme-parser "Github") for the latest code development, planned enhancements and known issues 👈
 
 == Getting Started ==
 
@@ -245,7 +239,7 @@ Each of these `div`'s can therefore be styled using your theme stylesheet.
 
 == Changelog ==
 
-[Learn more about my version numbering methodology](https://artiss.blog/2016/09/wordpress-plugin-versioning/ "WordPress Plugin Versioning")
+I use semantic versioning, with the first release being 1.0.
 
 = 1.3.7 =
 * Maintenance: Removed donation links
