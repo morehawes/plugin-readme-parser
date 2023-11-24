@@ -27,4 +27,19 @@ function arp_set_plugin_meta( $links, $file ) {
 }
 
 add_filter( 'plugin_row_meta', 'arp_set_plugin_meta', 10, 2 );
-?>
+
+/**
+ * Show Admin Message
+ *
+ * Display message on the administration screen once 2 months away from the plugins' closure.
+ */
+function arp_add_admin_notice() {
+
+	if ( gmdate( 'Ymd' ) >= '20241001' && is_admin() ) {
+		echo '<div class="notice notice-error"><p>';
+		echo __( sprintf( '⛔️ The Plugin README Praser plugin will be discontinued December 2024. After this time there will be no further updates, including security vulnerabilities. It is important that you disable it and find an alternative plugin before then. <a href="%s">Find out more here</a>.', 'https://wordpress.org/support/topic/important-please-read-before-posting-6/' ), 'wp-readme-parser' );
+		echo '</p></div>';
+	}
+}
+
+add_action( 'admin_notices', 'arp_add_admin_notice' );

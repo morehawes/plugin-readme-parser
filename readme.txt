@@ -1,10 +1,10 @@
 === Plugin README Parser ===
 Contributors: dartiss
-Tags: embed, markdown, parser, plugin, readme
+Tags: adopt-me, embed, markdown, parser, plugin, readme
 Requires at least: 4.6
-Tested up to: 6.3
+Tested up to: 6.4
 Requires PHP: 7.4
-Stable tag: 1.3.7
+Stable tag: 1.3.8
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -15,6 +15,10 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 WordPress README files are formatted using a version of the Markdown language. This plugin can be used to convert these to XHTML and display on a post or page of your site.
 
 It's ideal for plugin developers who wish to add instructions to their own site without having to duplicate effort.
+
+**Note:**
+**This plugin will no longer be updated, other than for critical security issues. During December 2024, it will be formally closed.**
+**[Find out more here](https://wordpress.org/support/topic/important-please-read-before-posting-6/), including, if you’re a developer, how you can adopt it.**
 
 Key features include...
 
@@ -241,6 +245,9 @@ Each of these `div`'s can therefore be styled using your theme stylesheet.
 
 I use semantic versioning, with the first release being 1.0.
 
+= 1.3.8 =
+* Maintenance: Added notices about the plugin closure
+
 = 1.3.7 =
 * Maintenance: Removed donation links
 
@@ -324,5 +331,5 @@ I use semantic versioning, with the first release being 1.0.
 
 == Upgrade Notice ==
 
-= 1.3.7 =
-* Minor maintenance change
+= 1.3.8 =
+* Maintenance: Added notices about the plugin closure

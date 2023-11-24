@@ -4,6 +4,10 @@
 
 It's ideal for plugin developers who wish to add instructions to their own site without having to duplicate effort.
 
+**Note:**
+**This plugin will no longer be updated, other than for critical security issues. During December 2024, it will be formally closed.**
+**[Find out more here](https://wordpress.org/support/topic/important-please-read-before-posting-6/), including, if you’re a developer, how you can adopt it.**
+
 Features include...
 
 * Convert your markdown README to XHTML and display in any post or page
