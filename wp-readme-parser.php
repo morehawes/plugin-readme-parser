@@ -3,7 +3,7 @@
 Plugin Name: Plugin README Parser
 Plugin URI: https://wordpress.org/plugins/wp-readme-parser/
 Description: Display a WordPress plugin's README file in XHTML format, for embedding on a post or page.
-Version: 1.3.8
+Version: 1.3.9
 Author: David Artiss
 Author URI: https://artiss.blog
 Text Domain: wp-readme-parser
