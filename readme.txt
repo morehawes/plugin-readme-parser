@@ -1,10 +1,10 @@
 === Plugin README Parser ===
-Contributors: dartiss
+Contributors: dartiss, morehawes
 Tags: embed, markdown, parser, plugin, readme
 Requires at least: 4.6
 Tested up to: 6.4
 Requires PHP: 7.4
-Stable tag: 1.3.9
+Stable tag: 2024.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -32,7 +32,7 @@ Key features include...
 
 Iconography is courtesy of [Flatart](https://www.freepik.com/flatart) ♥️
 
-👉 Please visit the [Github page](https://github.com/dartiss/plugin-readme-parser "Github") for the latest code development, planned enhancements and known issues 👈
+👉 Please visit the [Github page](https://github.com/morehawes/plugin-readme-parser "Github") for the latest code development, planned enhancements and known issues 👈
 
 == Getting Started ==
 
@@ -239,7 +239,9 @@ Each of these `div`'s can therefore be styled using your theme stylesheet.
 
 == Changelog ==
 
-I use semantic versioning, with the first release being 1.0.
+= 2024.1 =
+* Maintenance: Plugin adoption (Hi! I'm Joe). Updated Github link, contributors and author information
+* Maintenance: Added deploy shell script
 
 = 1.3.9 =
 * Maintenance: Removed the previous notices, as the plugin is being adopted by a new developer
@@ -330,5 +332,5 @@ I use semantic versioning, with the first release being 1.0.
 
 == Upgrade Notice ==
 
-= 1.3.9 =
-* Removed the notices about the plugin closure
+= 2024.1 =
+* The plugin has been adpoted! Updates coming soon.
