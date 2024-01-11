@@ -1,12 +1,8 @@
 # Plugin README Parser
 
-<img src="https://ps.w.org/wp-readme-parser/assets/icon-128x128.png" align="left">WordPress README files are formatted using a version of the Markdown language. This plugin can be used to convert these to XHTML and display on a post or page of your site.
+<img src="https://ps.w.org/wp-readme-parser/assets/icon.svg" width=128px align="left" style="padding-right: 20px">WordPress README files are formatted using a version of the Markdown language. This plugin can be used to convert these to XHTML and display on a post or page of your site.
 
 It's ideal for plugin developers who wish to add instructions to their own site without having to duplicate effort.
-
-**Note:**
-**This plugin will no longer be updated, other than for critical security issues. During December 2024, it will be formally closed.**
-**[Find out more here](https://wordpress.org/support/topic/important-please-read-before-posting-6/), including, if you’re a developer, how you can adopt it.**
 
 Features include...
 
@@ -23,7 +19,7 @@ Features include...
 
 Plugin README Parser uses [PHP Markdown Extra](http://michelf.com/projects/php-markdown/extra/ "PHP Markdown Extra") by Michel Fortin.
 
-Iconography is courtesy of the very talented [Janki Rathod](https://www.fiverr.com/jankirathore) ♥️
+Iconography is courtesy of [Flatart](https://www.freepik.com/flatart) ♥️
 
 ### Reviews & Mentions
 
