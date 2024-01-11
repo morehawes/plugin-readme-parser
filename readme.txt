@@ -4,7 +4,7 @@ Tags: embed, markdown, parser, plugin, readme
 Requires at least: 4.6
 Tested up to: 6.4
 Requires PHP: 7.4
-Stable tag: 2024.1
+Stable tag: 1.3.10
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -239,7 +239,7 @@ Each of these `div`'s can therefore be styled using your theme stylesheet.
 
 == Changelog ==
 
-= 2024.1 =
+= 1.3.10 =
 * Maintenance: Plugin adoption (Hi! I'm Joe). Updated Github link, contributors and author information
 * Maintenance: Added deploy shell script
 
@@ -332,5 +332,5 @@ Each of these `div`'s can therefore be styled using your theme stylesheet.
 
 == Upgrade Notice ==
 
-= 2024.1 =
+= 1.3.10 =
 * The plugin has been adpoted! Updates coming soon.
