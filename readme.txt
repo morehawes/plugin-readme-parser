@@ -4,7 +4,7 @@ Tags: embed, markdown, parser, plugin, readme
 Requires at least: 4.6
 Tested up to: 6.4
 Requires PHP: 7.4
-Stable tag: 1.3.12
+Stable tag: 1.3.13
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -238,6 +238,10 @@ Screenshots have a `<div>` with a `class` of `np-screenshotx`, where `x` is the 
 Each of these `div`'s can therefore be styled using your theme stylesheet.
 
 == Changelog ==
+
+= 1.3.13 =
+
+* Fix: The "Requires PHP" line was incorrectly displaying when excluding the Meta section. Thanks to [David Artiss](https://wordpress.org/support/users/dartiss/) for [bringing this to my attention](https://wordpress.org/support/topic/bug-requires-php-being-output-even-if-meta-is-suppressed/).
 
 = 1.3.12 =
 * Maintenance: Updated [php-markdown](https://github.com/michelf/php-markdown) library to latest version to resolve PHP deprecation notices.

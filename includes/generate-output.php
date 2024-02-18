@@ -221,9 +221,22 @@ function readme_parser($paras = '', $content = '') {
 
 					// Process meta data from top
 
-					if (('Contributors:' == substr($file_array[$i], 0, 13)) or ('Donate link:' == substr($file_array[$i], 0, 12)) or ('Tags:' == substr($file_array[$i], 0, 5)) or ('Requires at least:' == substr($file_array[$i], 0, 18)) or ('Tested up to:' == substr($file_array[$i], 0, 13)) or ('Stable tag:' == substr($file_array[$i], 0, 11)) or ('License URI:' == substr($file_array[$i], 0, 12)) or ('License:' == substr($file_array[$i], 0, 8))) {
+					if (
+						('Contributors:' == substr($file_array[$i], 0, 13)) ||
+						('Donate link:' == substr($file_array[$i], 0, 12)) ||
+						('Tags:' == substr($file_array[$i], 0, 5)) ||
+						('Requires at least:' == substr($file_array[$i], 0, 18)) ||
+						('Tested up to:' == substr($file_array[$i], 0, 13)) ||
+						('Stable tag:' == substr($file_array[$i], 0, 11)) ||
+						('License URI:' == substr($file_array[$i], 0, 12)) ||
+						('License:' == substr($file_array[$i], 0, 8)) ||
+						('Requires PHP:' == substr($file_array[$i], 0, 13))
+					) {
 
-						if (arp_is_it_excluded('meta', $exclude)) {$add_to_output = false;}
+						// If we are excluding the meta section, don't add it to the output
+						if (arp_is_it_excluded('meta', $exclude)) {
+							$add_to_output = false;
+						}
 
 						if (('Requires at least:' == substr($file_array[$i], 0, 18)) && (arp_is_it_excluded('requires', $exclude))) {$add_to_output = false;}
 
