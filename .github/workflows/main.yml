@@ -1,3 +1,4 @@
-- name: WordPress Plugin Deploy
-  uses: 10up/action-wordpress-plugin-deploy@2.2.2
-
+name: WordPress Plugin Deploy
+uses: 10up/action-wordpress-plugin-deploy@2.2.2
+env:
+  SLUG: wp-readme-parser
