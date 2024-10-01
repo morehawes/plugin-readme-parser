@@ -240,11 +240,9 @@ Each of these `div`'s can therefore be styled using your theme stylesheet.
 == Changelog ==
 
 = 1.3.14 =
-
-- GitHub Actions SVN Deploy
+* Bug: Fixed Screenshots not being displayed when using the `assets` parameter. Thanks to [David Artiss](https://wordpress.org/support/users/dartiss/) for [bringing this to my attention](https://wordpress.org/support/topic/fix-screenshots-not-displaying/).
 
 = 1.3.13 =
-
 * Fix: The "Requires PHP" line was incorrectly displaying when excluding the Meta section. Thanks to [David Artiss](https://wordpress.org/support/users/dartiss/) for [bringing this to my attention](https://wordpress.org/support/topic/bug-requires-php-being-output-even-if-meta-is-suppressed/).
 
 = 1.3.12 =
