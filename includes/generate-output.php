@@ -210,9 +210,9 @@ function readme_parser($paras = '', $content = '') {
 						$screenshot_url = 'http://plugins.svn.wordpress.org/' . $plugin_name . '/assets/';
 					} else {
 						if ('trunk' == strtolower($version)) {
-							$screenshot_url = 'http://plugins.svn.wordpress.org/' . $plugin_name . '/trunk/';
+							$screenshot_url = 'http://plugins.svn.wordpress.org/' . $plugin_name . '/trunk/assets/';
 						} else {
-							$screenshot_url = 'http://plugins.svn.wordpress.org/' . $plugin_name . '/tags/' . $version . '/';
+							$screenshot_url = 'http://plugins.svn.wordpress.org/' . $plugin_name . '/tags/' . $version . '/assets/';
 						}
 					}
 				}

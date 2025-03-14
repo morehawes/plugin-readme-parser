@@ -4,7 +4,7 @@ Tags: embed, markdown, parser, plugin, readme
 Requires at least: 4.6
 Tested up to: 6.4
 Requires PHP: 7.4
-Stable tag: 1.3.14
+Stable tag: 1.3.15
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -239,7 +239,12 @@ Each of these `div`'s can therefore be styled using your theme stylesheet.
 
 == Changelog ==
 
+= 1.3.15 =
+
+* Fix: Screenshot fix.
+
 = 1.3.14 =
+
 * Bug: Fixed Screenshots not being displayed when using the `assets` parameter. Thanks to [David Artiss](https://wordpress.org/support/users/dartiss/) for [bringing this to my attention](https://wordpress.org/support/topic/fix-screenshots-not-displaying/).
 
 = 1.3.13 =
