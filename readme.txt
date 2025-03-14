@@ -88,9 +88,9 @@ If you wish a link to have a nofollow option (i.e. the tag of `rel="nofollow"`) 
 
 **cache**
 
-This allows you to specify how long output should be cached for, in minutes. By default caching does not occur. For example, to cache for 1 hour...
+This allows you to specify how long output should be cached for, in minutes. By default caching is set to 60 minutes. For example, to cache for 24 hours...
 
-`[readme cache=60]WP README Parser[/readme]`
+`[readme cache=1440]WP README Parser[/readme]`
 
 **version**
 
@@ -196,7 +196,7 @@ There are 4 additional parameters...
 * **name** - Use this to specify the plugin name. This is a require parameter
 * **target** - If outputting a link this will assign a target to the output (default is _blank)
 * **nofollow** - If `Yes` then this will be a `nofollow` link. By default it won't be
-* **cache** - By default any output will be cached for 5 minutes so that if you use this shortcode multiple times on a page the data will only be fetched once. Specify a different number (in minutes) to adjust this. Set to `No` to switch off caching entirely
+* **cache** - By default any output will be cached for 50 minutes so that if you use this shortcode multiple times on a page the data will only be fetched once. Specify a different number (in minutes) to adjust this. Set to `No` to switch off caching entirely
 
 An example of usage may be...
 
@@ -242,6 +242,7 @@ Each of these `div`'s can therefore be styled using your theme stylesheet.
 = 1.3.15 =
 
 * Fix: Screenshot fix.
+* Change: Set default cache to 60 minutes.
 
 = 1.3.14 =
 

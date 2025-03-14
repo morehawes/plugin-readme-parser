@@ -31,7 +31,7 @@ function readme_parser($paras = '', $content = '') {
 
 	// Extract parameters
 
-	extract(shortcode_atts(['assets' => '', 'exclude' => '', 'ext' => '', 'hide' => '', 'include' => '', 'scr_url' => '', 'scr_ext' => '', 'target' => '_blank', 'nofollow' => '', 'ignore' => '', 'cache' => '', 'version' => '', 'mirror' => '', 'links' => 'bottom', 'name' => ''], $paras));
+	extract(shortcode_atts(['assets' => '', 'exclude' => '', 'ext' => '', 'hide' => '', 'include' => '', 'scr_url' => '', 'scr_ext' => '', 'target' => '_blank', 'nofollow' => '', 'ignore' => '', 'cache' => '60', 'version' => '', 'mirror' => '', 'links' => 'bottom', 'name' => ''], $paras));
 
 	// Get cached output
 
@@ -538,7 +538,7 @@ add_shortcode('readme_banner', 'readme_banner');
 
 function readme_info($paras = '', $content = '') {
 
-	extract(shortcode_atts(['name' => '', 'target' => '_blank', 'nofollow' => '', 'data' => '', 'cache' => '5'], $paras));
+	extract(shortcode_atts(['name' => '', 'target' => '_blank', 'nofollow' => '', 'data' => '', 'cache' => '60'], $paras));
 
 	$result = false;
 	$output = '';
