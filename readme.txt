@@ -2,7 +2,7 @@
 Contributors: morehawes, dartiss
 Tags: embed, markdown, parser, plugin, readme
 Requires at least: 4.6
-Tested up to: 6.4
+Tested up to: 6.7
 Requires PHP: 7.4
 Stable tag: 1.3.15
 License: GPLv2 or later
