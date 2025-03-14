@@ -31,7 +31,7 @@ function readme_parser($paras = '', $content = '') {
 
 	// Extract parameters
 
-	extract(shortcode_atts(array('assets' => '', 'exclude' => '', 'ext' => '', 'hide' => '', 'include' => '', 'scr_url' => '', 'scr_ext' => '', 'target' => '_blank', 'nofollow' => '', 'ignore' => '', 'cache' => '', 'version' => '', 'mirror' => '', 'links' => 'bottom', 'name' => ''), $paras));
+	extract(shortcode_atts(['assets' => '', 'exclude' => '', 'ext' => '', 'hide' => '', 'include' => '', 'scr_url' => '', 'scr_ext' => '', 'target' => '_blank', 'nofollow' => '', 'ignore' => '', 'cache' => '', 'version' => '', 'mirror' => '', 'links' => 'bottom', 'name' => ''], $paras));
 
 	// Get cached output
 
@@ -41,7 +41,7 @@ function readme_parser($paras = '', $content = '') {
 		$result = get_transient($cache_key);
 	}
 
-	if (!$result) {
+	if (! $result) {
 
 		// Set parameter values
 
@@ -65,7 +65,7 @@ function readme_parser($paras = '', $content = '') {
 		if ('' != $include) {
 			if (arp_is_it_excluded('links', $include)) {$show_links = true;}
 		} else {
-			if (!arp_is_it_excluded('links', $exclude)) {$show_links = true;}
+			if (! arp_is_it_excluded('links', $exclude)) {$show_links = true;}
 		}
 
 		// Ensure EXCLUDE and INCLUDE parameters aren't both included
@@ -306,14 +306,14 @@ function readme_parser($paras = '', $content = '') {
 						// Depending on file existence, set the appropriate file extension
 
 						$ext = arp_check_img_exists($this_screenshot, 'png');
-						if (!$ext) {$ext = arp_check_img_exists($this_screenshot, 'gif');}
-						if (!$ext) {$ext = arp_check_img_exists($this_screenshot, 'jpg');}
-						if (!$ext) {$ext = arp_check_img_exists($this_screenshot, 'jpeg');}
+						if (! $ext) {$ext = arp_check_img_exists($this_screenshot, 'gif');}
+						if (! $ext) {$ext = arp_check_img_exists($this_screenshot, 'jpg');}
+						if (! $ext) {$ext = arp_check_img_exists($this_screenshot, 'jpeg');}
 						$this_screenshot .= $ext;
 
 						// Now put together the image URL
 
-						if (!$ext) {
+						if (! $ext) {
 
 							$file_array[$i] = arp_report_error(sprintf(__('Could not find %s image file', 'wp-readme-parser'), 'screenshot-' . $screenshot), 'Plugin README Parser', false);
 
@@ -328,7 +328,7 @@ function readme_parser($paras = '', $content = '') {
 
 				// Add current line to output, assuming not compressed and not a second blank line
 
-				if ((('' != $file_array[$i]) OR (!$last_line_blank)) && ($add_to_output)) {
+				if ((('' != $file_array[$i]) OR (! $last_line_blank)) && ($add_to_output)) {
 					$file_combined .= $file_array[$i] . $crlf;
 					if ('' == $file_array[$i]) {$last_line_blank = true;} else { $last_line_blank = false;}
 				}
@@ -385,13 +385,13 @@ function readme_parser($paras = '', $content = '') {
 
 				// If first line of code multi-line, replace CODE with PRE tag
 
-				if ((strpos($file_array[$i], '<code>', 0)) && (!strpos($file_array[$i], '</code>', 0))) {
+				if ((strpos($file_array[$i], '<code>', 0)) && (! strpos($file_array[$i], '</code>', 0))) {
 					$file_array[$i] = str_replace('<code>', '<pre>', $file_array[$i]);
 				}
 
 				// If final line to code multi-line, replace /CODE with /PRE tag
 
-				if ((strpos($file_array[$i], '</code>', 0)) && (!strpos($file_array[$i], '<code>', 0))) {
+				if ((strpos($file_array[$i], '</code>', 0)) && (! strpos($file_array[$i], '<code>', 0))) {
 					$file_array[$i] = str_replace('</code>', '</pre>', $file_array[$i]);
 				}
 
@@ -450,7 +450,7 @@ add_shortcode('readme', 'readme_parser');
 
 function readme_banner($paras = '', $content = '') {
 
-	extract(shortcode_atts(array('nofollow' => ''), $paras));
+	extract(shortcode_atts(['nofollow' => ''], $paras));
 
 	$output = '';
 
@@ -481,12 +481,12 @@ function readme_banner($paras = '', $content = '') {
 
 		// Check if the JPG banner exists
 
-		if (!$img_check) {
+		if (! $img_check) {
 
 			$ext = 'jpg';
 			$img_check = arp_check_img_exists($url, $ext);
 
-			if (!$img_check) {
+			if (! $img_check) {
 
 				// Build the banner 772 URL
 
@@ -499,12 +499,12 @@ function readme_banner($paras = '', $content = '') {
 
 				// Check if the JPG banner exists
 
-				if (!$img_check) {
+				if (! $img_check) {
 
 					$ext = 'jpg';
 					$img_check = arp_check_img_exists($url, $ext);
 
-					if (!$img_check) {$file_found = false;}
+					if (! $img_check) {$file_found = false;}
 
 				}
 			}
@@ -538,7 +538,7 @@ add_shortcode('readme_banner', 'readme_banner');
 
 function readme_info($paras = '', $content = '') {
 
-	extract(shortcode_atts(array('name' => '', 'target' => '_blank', 'nofollow' => '', 'data' => '', 'cache' => '5'), $paras));
+	extract(shortcode_atts(['name' => '', 'target' => '_blank', 'nofollow' => '', 'data' => '', 'cache' => '5'], $paras));
 
 	$result = false;
 	$output = '';
@@ -552,7 +552,7 @@ function readme_info($paras = '', $content = '') {
 		$result = get_transient($cache_key);
 	}
 
-	if (!$result) {
+	if (! $result) {
 
 		// Get the file
 
